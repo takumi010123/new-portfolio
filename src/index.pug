@@ -6,17 +6,38 @@ html(lang="ja")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name="description" content="blueberryのポートフォリオサイトです！")
     meta(name="robots" content="noindex,nofollow")
+    link(rel="stylesheet" href="./assets/css/destyle.css")
     link(rel="stylesheet" href="./assets/css/styles.css")
-    link(rel="stylesheet" href="./assets/css/sanitize.css")
     title blueberry portfolio
   body
     header.header
       h1.header__title blueberry portfolio
-      nav.gnav
-        ul.gnav__list
-          li.gnav__item Works
-          li.gnav__item Skill
-          li.gnav__item About
-          li.gnav__item Contact
-    main
+      nav.nav#nav
+        ul.nav__list
+          li.nav__item
+            a.nav__link(href="#") Works
+          li.nav__item
+            a.nav__link(href="#") Skill
+          li.nav__item
+            a.nav__link(href="#") About
+          li.nav__item
+            a.nav__link(href="#") Contact
+      .hamburger#hamburger
+        <!-- 1番上の線 -->
+        span.hamburger__line._top_#line1
+        <!-- 真ん中の線 -->
+        span.hamburger__line._middle_#line2
+        <!-- 1番下の線 -->
+        span.hamburger__line._bottom_#line3
+    main.main
+      .mv
+        .mv__wrap
+          h1.mv__title
+            |blueberry
+            br.pc-none
+            spna.sp-none &nbsp;
+            |portfolio
+          .mv__text Welcome to my portfolio!!!
+      h2
     footer
+    script(type="text/javascript" src="./assets/js/main.js")
