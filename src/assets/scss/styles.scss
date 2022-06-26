@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+// 共通
+
 html{
   font-size: 62.5%;
 }
@@ -7,6 +9,7 @@ html{
 .main{
   margin-top: 50px;
 }
+
 
 @media (min-width:768px) {
   .pc-none{
@@ -19,6 +22,34 @@ html{
     display: none;
   }
 }
+
+// =====section=====
+.section{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  &._gray_{
+    background-color: #EAEAEA;
+  }
+  @media (min-width:768px) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.section__title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.3rem;
+  @media (min-width:768px) {
+    font-size: 3.2rem;
+  }
+}
+// =====section=====
 
 // =====header=====
 .header {
@@ -167,3 +198,100 @@ html{
   }
 }
 // =====mv=====
+
+// =====card=====
+// -----cardWrap-----
+.cardWrap{
+  max-width: 1500px;
+  margin: auto;
+  @media (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 80px;
+  }
+}
+// -----cardWrap-----
+
+.card{
+  margin: auto;
+  margin-top: 20px;
+  max-width: 400px;
+  &:not(:first-child){
+    margin-top: 30px;
+  }
+  @media (min-width:768px) {
+    margin-top: 52px;
+    &:not(:first-child){
+      margin-top: 52px;
+    }
+  }
+}
+
+.card__img{
+  max-width: 100%;
+  height: auto;
+}
+
+.card__headding{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  @media (min-width:768px) {
+    margin-top: 24px;
+    font-size: 2.4rem;
+  }
+}
+
+.card__text{
+  margin-top: 3px;
+  font-size: 1.6rem;
+  @media (min-width:768px) {
+    margin-top: 5px;
+    font-size: 1.8rem;
+  }
+}
+// =====card=====
+
+// =====contents=====
+.contents__list{
+  @media (min-width:768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin-top: 30px;
+  }
+}
+
+.contents__listItem{
+  margin-top: 40px;
+  @media (min-width:768px) {
+    width: 45%;
+    margin: 0;
+  }
+}
+
+.contents__imgWrap{
+  text-align: center;
+}
+
+.contents__textWrap{
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 20px;
+  @media (min-width:768px) {
+    margin-top: 40px;
+
+  }
+}
+
+.contents__headding{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contents__text{
+  font-size: 16px;
+  margin-top: 10px;
+}
+// =====contents=====

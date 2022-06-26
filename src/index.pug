@@ -30,7 +30,7 @@ html(lang="ja")
         <!-- 1番下の線 -->
         span.hamburger__line._bottom_#line3
     main.main
-      .mv
+      section.mv
         .mv__wrap
           h1.mv__title
             |blueberry
@@ -38,6 +38,107 @@ html(lang="ja")
             spna.sp-none &nbsp;
             |portfolio
           .mv__text Welcome to my portfolio!!!
-      h2
+      section.section._gray_
+        h2.section__title Works
+        .cardWrap
+          .card
+            .card__imgWrap
+              picture.card__picture
+                source(media='(min-width: 768px)' srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
+                source(media='(max-width: 767px)' srcset='./assets/images/img-01.jpg 1x, ./assets/images/img-01@2x.jpg 2x')
+                img.card__img(src='./assets/images/mv-img-pc.jpg' decoding='async' width='400' height='300' alt="制作実績")
+            .card__textWrap
+              .card__headding タイトル
+              .card__text cording
+          .card
+            .card__imgWrap
+              picture.card__picture
+                source(media='(min-width: 768px)' srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
+                source(media='(max-width: 767px)' srcset='./assets/images/img-01.jpg 1x, ./assets/images/img-01@2x.jpg 2x')
+                img.card__img(src='./assets/images/mv-img-pc.jpg' decoding='async' width='400' height='300' alt="制作実績")
+            .card__textWrap
+              .card__headding タイトル
+              .card__text cording
+          .card
+            .card__imgWrap
+              picture.card__picture
+                source(media='(min-width: 768px)' srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
+                source(media='(max-width: 767px)' srcset='./assets/images/img-01.jpg 1x, ./assets/images/img-01@2x.jpg 2x')
+                img.card__img(src='./assets/images/mv-img-pc.jpg' decoding='async' width='400' height='300' alt="制作実績")
+            .card__textWrap
+              .card__headding タイトル
+              .card__text cording
+          .card
+            .card__imgWrap
+              picture.card__picture
+                source(media='(min-width: 768px)' srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
+                source(media='(max-width: 767px)' srcset='./assets/images/img-01.jpg 1x, ./assets/images/img-01@2x.jpg 2x')
+                img.card__img(src='./assets/images/mv-img-pc.jpg' decoding='async' width='400' height='300' alt="制作実績")
+            .card__textWrap
+              .card__headding タイトル
+              .card__text cording
+          .card
+            .card__imgWrap
+              picture.card__picture
+                source(media='(min-width: 768px)' srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
+                source(media='(max-width: 767px)' srcset='./assets/images/img-01.jpg 1x, ./assets/images/img-01@2x.jpg 2x')
+                img.card__img(src='./assets/images/mv-img-pc.jpg' decoding='async' width='400' height='300' alt="制作実績")
+            .card__textWrap
+              .card__headding タイトル
+              .card__text cording
+          .card
+            .card__imgWrap
+              picture.card__picture
+                source(media='(min-width: 768px)' srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
+                source(media='(max-width: 767px)' srcset='./assets/images/img-01.jpg 1x, ./assets/images/img-01@2x.jpg 2x')
+                img.card__img(src='./assets/images/mv-img-pc.jpg' decoding='async' width='400' height='300' alt="制作実績")
+            .card__textWrap
+              .card__headding タイトル
+              .card__text cording
+      section.section
+        h2.section__title Skill
+        ul.contents__list
+          li.contents__listItem
+            figure.contents__wrap
+              .contents__imgWrap
+                picture.contents__picture
+                  source(media='(min-width: 768px)' srcset='./assets/images/skill-logo-01.webp 1x, ./assets/images/skill-logo-01@2x.webp 2x' type='image/webp')
+                  source(media='(max-width: 767px)' srcset='./assets/images/skill-logo-01.png 1x, ./assets/images/skill-logo-01@2x.png 2x')
+                  img.contents__img(src='./assets/images/skill-logo-01.png' decoding='async' width='155' height='100' alt="css/html")
+              .contents__textWrap
+                .contents__headding HTML/CSS
+                .contents__text
+                  |webサイトのレスポンシブコーディングが可能です。
+                  br
+                  |BEM,SCSSも使用可能です。
+                  br
+                  |エディターはVisual Studio Codeを使用しています。
+          li.contents__listItem
+            figure.contents__wrap
+              .contents__imgWrap
+                picture.contents__picture
+                  source(media='(min-width: 768px)' srcset='./assets/images/skill-logo-02.webp 1x, ./assets/images/skill-logo-02@2x.webp 2x' type='image/webp')
+                  source(media='(max-width: 767px)' srcset='./assets/images/skill-logo-02.png 1x, ./assets/images/skill-logo-02@2x.png 2x')
+                  img.contents__img(src='./assets/images/skill-logo-02.png' decoding='async' width='71' height='100' alt="css/html")
+              .contents__textWrap
+                .contents__headding JavaScript
+                .contents__text ライブラリの実装や簡単なアニメーションの実装が可能です。
+          li.contents__listItem
+            figure.contents__wrap
+              .contents__imgWrap
+                picture.contents__picture
+                  source(media='(min-width: 768px)' srcset='./assets/images/skill-logo-03.webp 1x, ./assets/images/skill-logo-03@2x.webp 2x' type='image/webp')
+                  source(media='(max-width: 767px)' srcset='./assets/images/skill-logo-03.png 1x, ./assets/images/skill-logo-03@2x.png 2x')
+                  img.contents__img(src='./assets/images/skill-logo-03.png' decoding='async' width='100' height='100' alt="css/html")
+              .contents__textWrap
+                .contents__headding Wordpress
+                .contents__text
+                  br
+                  |サーバーからのインストールや静的サイトのワードプレス化が可能です。
+                  br
+                  |ワードプレスの記事投稿固定ページの投稿も可能です。
+
+
+    
     footer
     script(type="text/javascript" src="./assets/js/main.js")
