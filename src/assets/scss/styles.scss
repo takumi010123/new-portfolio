@@ -6,6 +6,11 @@ html{
   font-size: 62.5%;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 .main{
   margin-top: 50px;
 }
@@ -214,15 +219,15 @@ html{
 
 .card{
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   max-width: 400px;
   &:not(:first-child){
     margin-top: 30px;
   }
   @media (min-width:768px) {
-    margin-top: 52px;
+    margin-top: 50px;
     &:not(:first-child){
-      margin-top: 52px;
+      margin-top: 50px;
     }
   }
 }
@@ -252,18 +257,18 @@ html{
 }
 // =====card=====
 
-// =====contents=====
-.contents__list{
+// =====works=====
+.works__list{
   @media (min-width:768px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px 40px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 
-.contents__listItem{
+.works__listItem{
   margin-top: 40px;
   @media (min-width:768px) {
     width: 45%;
@@ -271,11 +276,11 @@ html{
   }
 }
 
-.contents__imgWrap{
+.works__imgWrap{
   text-align: center;
 }
 
-.contents__textWrap{
+.works__textWrap{
   max-width: 360px;
   margin: 0 auto;
   margin-top: 20px;
@@ -285,13 +290,42 @@ html{
   }
 }
 
-.contents__headding{
+.works__headding{
   font-weight: bold;
   font-size: 18px;
 }
 
-.contents__text{
+.works__text{
   font-size: 16px;
   margin-top: 10px;
 }
-// =====contents=====
+// =====works=====
+
+// =====about=====
+
+.about{
+  margin-top: 40px;
+  @media (min-width:768px) {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.about__imgWrap{
+  text-align: center;
+}
+
+.about__text{
+  margin-top: 30px;
+  line-height: 1.3;
+  font-size: 16px;
+  @media (min-width:768px) {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+// =====about=====
