@@ -329,3 +329,43 @@ img{
 }
 
 // =====about=====
+
+// =====contact=====
+.section{
+  &._contact_{
+    padding-bottom: 20px;
+  }
+}
+
+.contact{
+  margin-top: 40px;
+  @media (min-width:768px) {
+    margin-top: 50px;
+  }
+}
+
+.contact__list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact__icon{
+  font-size: 30px;
+  @media (min-width:768px) {
+    font-size: 40px;
+  }
+}
+
+.copyLight{
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  color: #808080;
+  font-size: 12px;
+  @media (min-width:768px) {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+// =====contact=====
