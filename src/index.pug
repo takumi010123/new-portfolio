@@ -11,20 +11,21 @@ html(lang="ja")
     link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap')
     link(rel="stylesheet" href="./assets/css/aos.css")
     link(rel="stylesheet" href="./assets/css/styles.css")
-    title blueberry portfolio
-  body
+    title 山田匠 portfolio
+  body#body
     header.header
-      h1.header__title blueberry portfolio
+      h1.header__title
+        a.headder__link(href="#") blueberry portfolio
       nav.nav#nav
         ul.nav__list
           li.nav__item
-            a.nav__link(href="#") Works
+            a.nav__link(href="#works") Works
           li.nav__item
-            a.nav__link(href="#") Skill
+            a.nav__link(href="#skill") Skill
           li.nav__item
-            a.nav__link(href="#") About
+            a.nav__link(href="#about") About
           li.nav__item
-            a.nav__link(href="#") Contact
+            a.nav__link(href="#contact") Contact
       .hamburger#hamburger
         <!-- 1番上の線 -->
         span.hamburger__line._top_#line1
@@ -41,10 +42,10 @@ html(lang="ja")
             spna.sp-none &nbsp;
             |portfolio
           .mv__text Welcome to my portfolio!!!
-      section.section._gray_
-        h2.section__title Works
+      section.section._gray_#works
+        h2.section__title(data-aos="fade-up") Works
         .cardWrap
-          .card
+          .card(data-aos="fade-up")
             .card__imgWrap
               picture.card__picture
                 source(srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
@@ -53,7 +54,7 @@ html(lang="ja")
             .card__textWrap
               .card__headding タイトル
               .card__text cording
-          .card
+          .card(data-aos="fade-up")
             .card__imgWrap
               picture.card__picture
                 source(srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
@@ -62,7 +63,7 @@ html(lang="ja")
             .card__textWrap
               .card__headding タイトル
               .card__text cording
-          .card
+          .card(data-aos="fade-up")
             .card__imgWrap
               picture.card__picture
                 source(srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
@@ -71,7 +72,7 @@ html(lang="ja")
             .card__textWrap
               .card__headding タイトル
               .card__text cording
-          .card
+          .card(data-aos="fade-up")
             .card__imgWrap
               picture.card__picture
                 source(srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
@@ -80,7 +81,7 @@ html(lang="ja")
             .card__textWrap
               .card__headding タイトル
               .card__text cording
-          .card
+          .card(data-aos="fade-up")
             .card__imgWrap
               picture.card__picture
                 source(srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
@@ -89,7 +90,7 @@ html(lang="ja")
             .card__textWrap
               .card__headding タイトル
               .card__text cording
-          .card
+          .card(data-aos="fade-up")
             .card__imgWrap
               picture.card__picture
                 source(srcset='./assets/images/img-01.webp 1x, ./assets/images/img-01@2x.webp 2x' type='image/webp')
@@ -98,11 +99,11 @@ html(lang="ja")
             .card__textWrap
               .card__headding タイトル
               .card__text cording
-      section.section
-        h2.section__title Skill
+      section.section#skill
+        h2.section__title(data-aos="fade-up") Skill
         .information
           ul.information__list
-            li.information__listItem
+            li.information__listItem(data-aos="fade-up")
               figure.information__wrap
                 .information__imgWrap
                   picture.information__picture
@@ -117,7 +118,7 @@ html(lang="ja")
                     |BEM,SCSSも使用可能です。
                     br
                     |エディターはVisual Studio Codeを使用しています。
-            li.information__listItem
+            li.information__listItem(data-aos="fade-up")
               figure.information__wrap
                 .information__imgWrap
                   picture.information__picture
@@ -127,7 +128,7 @@ html(lang="ja")
                 .information__textWrap
                   .information__headding JavaScript
                   .information__text ライブラリの実装や簡単なアニメーションの実装が可能です。
-            li.information__listItem
+            li.information__listItem(data-aos="fade-up")
               figure.information__wrap
                 .information__imgWrap
                   picture.information__picture
@@ -140,9 +141,9 @@ html(lang="ja")
                     |サーバーからのインストールや静的サイトのワードプレス化が可能です。
                     br
                     |ワードプレスの記事投稿固定ページの投稿も可能です。
-      section.section._gray_
-        h2.section__title About
-        .about
+      section.section._gray_#about
+        h2.section__title(data-aos="fade-up") About
+        .about(data-aos="fade-up")
           .about__imgWrap
             picture.about__picture
               source(media='(min-width: 768px)' srcset='./assets/images/about-img-pc.webp 1x, ./assets/images/about-img-pc@2x.webp 2x' type='image/webp')
@@ -156,10 +157,10 @@ html(lang="ja")
             |現職ではwebサイトの運用、LP作成、Wordpressを使ったサイト作成等を行っております。
             br
             |趣味はスキーやキャンプなどのアウトドアで、スキー場やキャンプ場からリモートで働いたりしています！
-      section.section._contact_
-        h2.section__title Contact
+      section.section._contact_#contact
+        h2.section__title(data-aos="fade-up") Contact
         .contact
-          ul.contact__list
+          ul.contact__list(data-aos="fade-up")
             //- li.contact__item
             //-   a(href="mailto:blueberrydrops1010@gmail.com" target="_blank" rel="noopener noreferrer")
             //-     i.fa-solid.fa-envelope.contact__icon

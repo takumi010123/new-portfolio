@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-// 共通
+// =====共通=====
 
 html{
   font-size: 62.5%;
@@ -9,6 +9,12 @@ html{
 body{
   font-family: 'Noto Sans JP', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: 400;
+  &.in{
+    overflow: hidden;
+    @media (min-width:768px) {
+      overflow: auto;
+    }
+  }
 }
 
 img{
@@ -19,7 +25,6 @@ img{
 .main{
   margin-top: 50px;
 }
-
 
 @media (min-width:768px) {
   .pc-none{
@@ -32,6 +37,7 @@ img{
     display: none;
   }
 }
+// =====共通=====
 
 // =====section=====
 .section{
@@ -86,25 +92,60 @@ img{
   position: absolute;
   top: 0;
   /*ナビメニューを左に隠した状態になる*/
-  right: -40%;
-  width: 40%;
+  right: -100%;
+  width: 100%;
   height: 100vh;
   /*０.7秒かけてナビメニューがスライドする*/
   transition: 0.7s;
   text-align: center;
   background-color: #404040;
   z-index: 1000;
+  &.in{
+    transform: translateX(-100%);
+    overflow: hidden;
+    @media (min-width:768px) {
+    }
+  }
+  @media (min-width:768px) {
+    right: -40%;
+    width: 40%;
+  }
 }
 
 .nav__list{
-  padding-top: 80px;
+  padding-top: 150px;
+  @media (min-width:768px) {
+    padding-top: 200px;
+  }
 }
 
 .nav__item{
   font-size: 2rem;
   color: #fff;
   &:not(:first-child){
-    margin-top: 10px;
+    margin-top: 50px;
+  }
+}
+
+.nav__link{
+  font-size: 3rem;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+  }
+  &:hover{
+    &::after{
+      transform: scale(1, 1);
+    }
   }
 }
 //-----nav------
@@ -142,9 +183,6 @@ img{
 }
 
 
-.in{
-  transform: translateX(-100%);
-}
 .line_1,.line_2,.line_3{
   background: #fff;
 }
